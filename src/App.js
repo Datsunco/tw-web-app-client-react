@@ -1,5 +1,6 @@
 import './App.css';
 import {useEffect} from "react";
+import Button from "./components/Button/Button";
 const tg = window.Telegram.WebApp;
 
 function App() {
@@ -7,11 +8,9 @@ function App() {
         tg.ready();
     },[])
   return (
-
     <div className="App">
-        <button>first</button>
-        <button>second</button>
-
+        <Button>first</Button>
+        <Button>sec</Button>
     </div>
   );
 }
