@@ -4,6 +4,7 @@ button{
     color: var(--tg-theme-button-text-color);
     border: none;
     margin: 50px;
+
     outline: none;
     cursor: pointer;
 }
