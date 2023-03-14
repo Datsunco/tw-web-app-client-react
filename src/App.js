@@ -7,6 +7,7 @@ function App() {
         tg.ready();
     },[])
   return (
+
     <div className="App">
         <button>first</button>
         <button>second</button>
