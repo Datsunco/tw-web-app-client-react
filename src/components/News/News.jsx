@@ -4,18 +4,18 @@ import './News.css'
 const News = () => {
     return (
         <div className={'news'}>
-            <a className={'news_text'}>Новости проекта</a>
+            <text className={'news_text'}>Новости проекта</text>
             <div className={'container'}>
                 <ul>
-                    <li><a>
+                    <li><text >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla est,
                         vitae feugiat felis. Cras faucibus vulputate augue. Sed.
-                        </a>
+                        </text>
                     </li>
-                    <li><a>
+                    <li><text href={'#'}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla est,
                         vitae feugiat felis. Cras faucibus vulputate augue. Sed.
-                    </a>
+                    </text>
                     </li>
                 </ul>
             </div>
