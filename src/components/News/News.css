@@ -1,0 +1,21 @@
+
+.news{
+    width: 100%;
+    margin-top: 170px;
+}
+
+.news_text{
+    color: rgb(36,117,224);
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+
+}

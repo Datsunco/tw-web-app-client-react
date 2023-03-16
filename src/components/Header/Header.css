@@ -8,6 +8,7 @@
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     color: var(--tg-theme-button-text-color);
+    margin-bottom: 10px;
 }
 
 .buttons_block{
@@ -30,7 +31,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.token_am{
+.token_balance_text{
     margin-top: 200px;
     font-size: 20px;
     display: flex;
