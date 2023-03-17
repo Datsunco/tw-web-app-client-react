@@ -5,7 +5,7 @@ import './Donation.css'
 const Donation = () => {
     return (
         <div>
-            <text>хУЙ</text>
+            <text>[eq</text>
         </div>
     );
 };
