@@ -31,4 +31,5 @@
 
 .news_text{
     color: rgb(245,245,245);
+    justify-content: left;
 }

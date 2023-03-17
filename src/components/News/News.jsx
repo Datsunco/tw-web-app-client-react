@@ -18,6 +18,8 @@ const News = () => {
                         <text className={'news_text'}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla est,
 
+
+
                         </text>
                         <text> Позавчера в 15:20</text>
                     </li>
