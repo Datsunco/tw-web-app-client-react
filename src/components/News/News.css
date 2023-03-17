@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-li{
+.new{
     margin-top: 20px;
     flex-direction: column;
     display: flex;

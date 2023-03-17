@@ -7,16 +7,19 @@ const News = () => {
             <text className={'news_block_text'}>Новости проекта</text>
             <div className={'container'}>
                 <ul>
-                    <li><text className={'news_text'}>
+                    <li className={'new'}>
+                        <text className={'news_text'}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla est,
                         vitae feugiat felis. Cras faucibus vulputate augue. Sed.
                         </text>
                         <text> Вчера в 18:45</text>
                     </li>
-                    <li><text className={'news_text'}>
+                    <li className={'new'}>
+                        <text className={'news_text'}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fringilla est,
                         vitae feugiat felis. Cras faucibus vulputate augue. Sed.
-                    </text>
+                        </text>
+                        <text> Позавчера в 15:20</text>
                     </li>
                 </ul>
             </div>
