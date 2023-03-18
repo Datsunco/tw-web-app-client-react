@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {useNavigate} from 'react-router-dom'
 import Button from "../Button/Button";
 import './Header.css'
@@ -11,7 +11,24 @@ const Header = () => {
     const onClickDonation = () => {
         navigate('/donation');
         tg.BackButton.show();
-    };
+
+    }
+
+    const onClickBackDonation = useCallback( () => {
+        navigate('');
+        tg.BackButton.hide();
+        },[navigate])
+
+    //const onBackFromDonation = useCallback( () => {
+    //    navigate('');
+    //},[])
+
+    useEffect(()=>{
+        tg.onEvent('backButtonClicked', onClickBackDonation)
+        return () => {
+            tg.offEvent('mainButtonClicked', onClickBackDonation)
+        }
+    },[onClickBackDonation])
 
     return (
         <div className={'header'}>
