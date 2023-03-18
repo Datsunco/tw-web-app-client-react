@@ -21,9 +21,7 @@ const Header = () => {
         tg.MainButton.hide();
         },[navigate])
 
-    //const onBackFromDonation = useCallback( () => {
-    //    navigate('');
-    //},[])
+
 
     useEffect(()=>{
         tg.onEvent('backButtonClicked', onClickBackDonation)
@@ -32,12 +30,12 @@ const Header = () => {
         }
     },[onClickBackDonation])
 
-    useEffect(() => {
-        tg.MainButton.setParams({
-            text: 'Перейти к оплате',
-            //color: 'var(--tg-theme-hint-color)',
-        })
-    },[])
+    //useEffect(() => {
+    //    tg.MainButton.setParams({
+    //        text: 'Перейти к оплате',
+    //        //color: 'var(--tg-theme-hint-color)',
+    //    })
+    //},[])
 
 
     return (
