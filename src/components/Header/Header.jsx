@@ -18,6 +18,7 @@ const Header = () => {
     const onClickBackDonation = useCallback( () => {
         navigate('');
         tg.BackButton.hide();
+        tg.MainButton.hide();
         },[navigate])
 
     //const onBackFromDonation = useCallback( () => {
@@ -33,7 +34,8 @@ const Header = () => {
 
     useEffect(() => {
         tg.MainButton.setParams({
-            text: 'Перейти к оплате'
+            text: 'Перейти к оплате',
+            color: 'var(--tg-theme-hint-color)',
         })
     },[])
 
