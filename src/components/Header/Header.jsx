@@ -13,6 +13,7 @@ const Header = () => {
         tg.BackButton.show();
         tg.MainButton.show();
         tg.MainButton.disable();
+        tg.MainButton.color = "##364b59";
     }
 
     const onClickBackDonation = useCallback( () => {
@@ -31,10 +32,9 @@ const Header = () => {
     },[onClickBackDonation])
 
     useEffect(() => {
-        tg.MainButton.setParams({
-            text: 'Перейти к оплате',
-            color: ''
-        })
+            tg.MainButton.setParams({
+                text: 'Перейти к оплате',
+            })
     },[])
 
     //useEffect(() => {
