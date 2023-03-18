@@ -35,6 +35,7 @@ const Header = () => {
             tg.MainButton.setParams({
                 text: 'Перейти к оплате',
                 color: '#364b59',
+
             })
     },[])
 
