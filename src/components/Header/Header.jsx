@@ -26,13 +26,14 @@ const Header = () => {
     useEffect(()=>{
         tg.onEvent('backButtonClicked', onClickBackDonation)
         return () => {
-            tg.offEvent('backButtonClicked', onClickBackDonation)
+            tg.offEvent('mainButtonClicked', onClickBackDonation)
         }
     },[onClickBackDonation])
 
     useEffect(() => {
         tg.MainButton.setParams({
-            text: 'Перейти к оплате'
+            text: 'Перейти к оплате',
+            color: ''
         })
     },[])
 
