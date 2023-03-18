@@ -1,7 +1,6 @@
 import './App.css';
 import {useEffect} from "react";
-import Header from "./components/Header/Header";
-//import News from "./components/News/News";
+import Main from "./components/Main/Main";
 import Donation from "./components/Donation/Donation";
 import {Route, Routes} from 'react-router-dom'
 
@@ -15,7 +14,8 @@ function App() {
   return (
     <div className="App">
         <Routes>
-            <Route index element={<Header/>}/>
+
+            <Route index element={<Main/>}/>
             <Route path='/donation' element={<Donation/>}/>
         </Routes>
 

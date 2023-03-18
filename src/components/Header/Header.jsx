@@ -3,11 +3,14 @@ import {useNavigate} from 'react-router-dom'
 import Button from "../Button/Button";
 import './Header.css'
 
+const tg = window.Telegram.WebApp;
+
 const Header = () => {
     const navigate = useNavigate();
 
     const onClickDonation = () => {
         navigate('/donation');
+        tg.BackButton.show();
     };
 
     return (
