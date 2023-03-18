@@ -12,6 +12,7 @@ const Donation = () => {
 
     return (
         <div className={'donation'}>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
             <text>Вы покупаете</text>
             <div className={'input_block'}>
                 <input
