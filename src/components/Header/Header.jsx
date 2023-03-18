@@ -26,7 +26,7 @@ const Header = () => {
     useEffect(()=>{
         tg.onEvent('backButtonClicked', onClickBackDonation)
         return () => {
-            tg.offEvent('mainButtonClicked', onClickBackDonation)
+            tg.offEvent('backButtonClicked', onClickBackDonation)
         }
     },[onClickBackDonation])
 
