@@ -30,6 +30,12 @@ const Header = () => {
         }
     },[onClickBackDonation])
 
+    useEffect(() => {
+        tg.MainButton.setParams({
+            text: 'Перейти к оплате'
+        })
+    },[])
+
     //useEffect(() => {
     //    tg.MainButton.setParams({
     //        text: 'Перейти к оплате',
