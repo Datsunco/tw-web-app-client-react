@@ -11,7 +11,8 @@ const Header = () => {
     const onClickDonation = () => {
         navigate('/donation');
         tg.BackButton.show();
-
+        tg.MainButton.show();
+        tg.MainButton.disable();
     }
 
     const onClickBackDonation = useCallback( () => {
@@ -29,6 +30,13 @@ const Header = () => {
             tg.offEvent('mainButtonClicked', onClickBackDonation)
         }
     },[onClickBackDonation])
+
+    useEffect(() => {
+        tg.MainButton.setParams({
+            text: 'Перейти к оплате'
+        })
+    },[])
+
 
     return (
         <div className={'header'}>
