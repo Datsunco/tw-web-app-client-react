@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
         <Routes>
-
             <Route index element={<Main/>}/>
             <Route path='/donation' element={<Donation/>}/>
+            <Route path='/services' element={<Donation/>}/>
         </Routes>
 
     </div>

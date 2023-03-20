@@ -16,6 +16,10 @@ const Header = () => {
         tg.MainButton.color = "##364b59";
     }
 
+    const onClickServices = () =>{
+        navigate('/seervices');
+    }
+
     const onClickBackDonation = useCallback( () => {
         navigate('');
         tg.BackButton.hide();
@@ -58,7 +62,7 @@ const Header = () => {
             </div>
             <div className={'buttons_block'}>
                 <Button>Главная</Button>
-                <Button>Сервисы</Button>
+                <Button onClick={onClickServices} >Сервисы</Button>
                 <Button onClick={onClickDonation}>Донат</Button>
                 <Button>Настройки</Button>
             </div>
