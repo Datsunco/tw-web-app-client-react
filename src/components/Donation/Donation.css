@@ -19,6 +19,19 @@
     margin-bottom: 10px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--tg-theme-text-color);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--tg-theme-text-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--tg-theme-text-color);
+}
+
 .currency_text{
     font-size: 17px;
     color: grey;
