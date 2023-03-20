@@ -19,7 +19,7 @@
 }
 
 .currency_text{
-    font-size: 18px;
+    font-size: 17px;
     color: grey;
 
 }
@@ -32,7 +32,6 @@
     font-size: 30px;
     color: grey;
     font-family: "Roboto";
-
     font-weight: bold;
     justify-content: end;
 }
