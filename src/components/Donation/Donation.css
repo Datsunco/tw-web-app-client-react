@@ -7,11 +7,12 @@
 }
 
 .input{
-    background: transparent;
+
     color: var(--tg-theme-text-color);
     border: none;
+    font-weight: bold;
     height: 45px;
-    width: 60px;
+    width: 30px;
     font-size: 45px;
     outline:none;
     margin-top: 10px;
@@ -31,7 +32,6 @@
 .currency_cut{
     font-size: 30px;
     color: grey;
-    font-family: "Roboto";
     font-weight: bold;
     justify-content: end;
 }
