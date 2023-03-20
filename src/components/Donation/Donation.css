@@ -8,10 +8,10 @@
 
 .input{
     background: transparent;
-    color: black;
+    color: var(--tg-theme-text-color);
     border: none;
     height: 45px;
-    width: 40px;
+    width: 60px;
     font-size: 45px;
     outline:none;
     margin-top: 10px;
@@ -19,7 +19,7 @@
 }
 
 .currency_text{
-    font-size: 19px;
+    font-size: 18px;
     color: grey;
 
 }
