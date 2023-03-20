@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .donation{
     font-family: 'Roboto', sans-serif;
@@ -8,10 +8,28 @@
 
 .input{
     background: transparent;
+    color: black;
     border: none;
     height: 30px;
     width: 40px;
+    font-size: 40px;
     outline:none;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.currency_text{
+    font-size: 10px;
+    color: grey;
+}
+
+.donation_text{
+    color: var(--tg-theme-text-color);
+}
+
+.currency_cut{
+    font-size: 30px;
+    color: grey;
+    font-family: "Roboto";
+    font-weight: bold;
 }

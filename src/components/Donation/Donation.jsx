@@ -13,7 +13,7 @@ const Donation = () => {
     return (
         <div className={'donation'}>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-            <text>Вы покупаете</text>
+            <text className={'donation_text'}>Вы покупаете</text>
             <div className={'input_block'}>
                 <input
                     id={'amount'}
@@ -23,9 +23,9 @@ const Donation = () => {
                     value={amount}
                     onChange={onChangeAmount}
                 />
-                <text>TWT</text>
+                <text className={'currency_cut'}>TWT</text>
             </div>
-            <text>1 TWT ≈ 1 rub</text>
+            <text className={'currency_text'}>1 TWT ≈ 1 rub</text>
         </div>
     );
 };
