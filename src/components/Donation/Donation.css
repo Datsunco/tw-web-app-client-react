@@ -17,6 +17,7 @@
     outline:none;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-indent: 10px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
