@@ -34,7 +34,6 @@
 
 .test_button{
     background: var(--tg-theme-bg-color);
-    background: black;
     height: 120px;
     width: 65%;
 }
@@ -44,7 +43,6 @@
     height: 120px;
     width: 30%;
     margin-left: 3%;
-    background: black;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
