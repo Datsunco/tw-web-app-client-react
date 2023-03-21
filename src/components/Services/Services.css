@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     background: var(--tg-theme-secondary-bg-color);
-    height: 500px;
+    height: 100%;
 }
 
 .search_services{
