@@ -1,0 +1,19 @@
+
+
+.services{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.search_services{
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.quick_button_block{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
