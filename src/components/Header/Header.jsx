@@ -19,12 +19,14 @@ const Header = () => {
     const onClickServices = () =>{
         navigate('/services');
         tg.BackButton.show();
+        tg.setBackgroundColor('secondary_bg_color')
     }
 
     const onClickBackDonation = useCallback( () => {
         navigate('');
         tg.BackButton.hide();
         tg.MainButton.hide();
+        tg.setBackgroundColor('bg_color')
         },[navigate])
 
 
