@@ -17,6 +17,7 @@ const Donation = () => {
             <div className={'input_block'}>
                 <input
                     id={'amount'}
+
                     className={'input'}
                     type="text"
                     placeholder={'0'}

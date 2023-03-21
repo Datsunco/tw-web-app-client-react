@@ -19,20 +19,20 @@
     margin-bottom: 10px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--tg-theme-text-color);
     opacity: 1; /* Firefox */
-    font-size: 45px;
+    /*font-size: 45px;*/
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: var(--tg-theme-text-color);
-    font-size: 45px;
+    /*font-size: 45px;*/
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--tg-theme-text-color);
-    font-size: 45px;
+    /*font-size: 45px;*/
 }
 
 .currency_text{
