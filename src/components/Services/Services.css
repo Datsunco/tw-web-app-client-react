@@ -28,7 +28,7 @@
 
 .quick_button_block{
     width: 85%;
-    margin-left: 12.5%;
+    margin-left: 7.5%;
     margin-top: 20px;
 }
 
@@ -47,6 +47,6 @@
 .test2_button{
     background: var(--tg-theme-bg-color);
     height: 120px;
-    width: 35%;
-    margin-top: 10px;
+    width: 45%;
+    margin-top: 15px;
 }
