@@ -29,17 +29,18 @@
 .token_amount{
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .token_balance_text{
     margin-top: 200px;
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
 }
 
 .logo{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 30px;
     height: 30px;
 }
