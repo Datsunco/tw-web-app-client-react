@@ -34,10 +34,9 @@
 
 .test_button{
     background: var(--tg-theme-bg-color);
-
+    background: black;
     height: 120px;
     width: 65%;
-    padding-right: 45%;
 }
 
 .test1_button{
@@ -45,7 +44,7 @@
     height: 120px;
     width: 30%;
     margin-left: 3%;
-
+    background: black;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
@@ -56,7 +55,9 @@
 }
 
 .text_button{
+    font-size: 15px;
+    width: 50%;
     position: relative;
-    top: -20%;
-    left: 10%;
+    top: -25%;
+    left: -40%;
 }
