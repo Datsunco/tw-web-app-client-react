@@ -4,7 +4,7 @@ import './News.css'
 const News = () => {
     return (
         <div className={'news'}>
-            <text className={'news_block_text'}>Новости проекта</text>
+            <text className={'news_block_text'}>НОВОСТИ ПРОЕКТА</text>
             <div className={'container'}>
                 <ul>
                     <li className={'new'}>
