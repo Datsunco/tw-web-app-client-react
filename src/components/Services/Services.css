@@ -13,7 +13,7 @@
     width: 90%;
     margin-left: 5%;
     justify-content: center;
-    height: 40px;
+    height: 35px;
     background: var(--tg-theme-bg-color);
     border: none;
     outline:none;
@@ -34,18 +34,19 @@
 
 .test_button{
     background: var(--tg-theme-bg-color);
-    height: 150px;
-    width: 60%;
+    height: 135px;
+    width: 65%;
 
 }
 
 .test1_button{
     background: var(--tg-theme-bg-color);
-    height: 200px;
-    width: 30%;
+    height: 135px;
+    width: 35%;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
-    height: 100px;
+    height: 135px;
+    width: 35%;
     margin-top: 10px;
 }
