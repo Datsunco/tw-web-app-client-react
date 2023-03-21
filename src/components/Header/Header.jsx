@@ -17,7 +17,8 @@ const Header = () => {
     }
 
     const onClickServices = () =>{
-        navigate('/seervices');
+        navigate('/services');
+        tg.BackButton.show();
     }
 
     const onClickBackDonation = useCallback( () => {
