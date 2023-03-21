@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     background: var(--tg-theme-secondary-bg-color);
+    height: 100%;
 }
 
 .search_services{
@@ -17,6 +18,7 @@
     outline:none;
     font-size: 18px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .quick_button_block{
