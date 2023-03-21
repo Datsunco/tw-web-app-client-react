@@ -2,7 +2,16 @@ import React from 'react';
 import './Services.css'
 
 
+const tg = window.Telegram.WebApp;
+
 const Services = () => {
+
+    const onFirButClick = () => {
+        tg.showPopup({
+            'title': 'Перейти к оплате',
+            'message': 'lol',
+        });
+    }
 
     return (
         <div className={'services'}>
@@ -12,7 +21,7 @@ const Services = () => {
                    className={'search_services'}/>
 
             <div className={'quick_button_block'}>
-                <button className={'test_button'}/>
+                <button onClick={onFirButClick} className={'test_button'}/>
                 <button className={'test1_button'}/>
                 <button className={'test2_button'}/>
 
