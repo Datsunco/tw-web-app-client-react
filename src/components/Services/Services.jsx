@@ -21,9 +21,9 @@ const Services = () => {
                    className={'search_services'}/>
 
             <div className={'quick_button_block'}>
-                <button onClick={onFirButClick} className={'test_button'}/>
-                <button className={'test1_button'}/>
-                <button className={'test2_button'}/>
+                <button onClick={onFirButClick} className={'test_button'}>Фото из космоса</button>
+                <button className={'test1_button'}>Скоро</button>
+                <button className={'test2_button'}>Скоро</button>
 
             </div>
         </div>

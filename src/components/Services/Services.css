@@ -36,7 +36,7 @@
     background: var(--tg-theme-bg-color);
     height: 120px;
     width: 65%;
-
+    justify-content: flex-start;
 }
 
 .test1_button{
@@ -44,10 +44,12 @@
     height: 120px;
     width: 30%;
     margin-left: 3%;
+    justify-content: left;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
     height: 120px;
     width: 45%;
     margin-top: 15px;
+    justify-content: end;
 }
