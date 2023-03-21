@@ -42,7 +42,7 @@
 .test1_button{
     background: var(--tg-theme-bg-color);
     height: 135px;
-    width: 35%;
+    width: 30%;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
