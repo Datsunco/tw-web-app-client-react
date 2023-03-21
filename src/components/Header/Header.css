@@ -30,6 +30,7 @@
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    color: var(--tg-theme-text-color);
 }
 
 .token_balance_text{
@@ -37,6 +38,7 @@
     font-size: 17px;
     display: flex;
     justify-content: center;
+    color: var(--tg-theme-text-color);
 }
 
 .logo{
