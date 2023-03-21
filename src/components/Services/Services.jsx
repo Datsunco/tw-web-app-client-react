@@ -23,7 +23,9 @@ const Services = () => {
             <div className={'quick_button_block'}>
 
                 <button onClick={onFirButClick} className={'test_button'}>
-                    <img alt={''}  className={'img'} src={'https://img-new.cgtrader.com/items/122381/dbaa861cce/photorealistic-earth-and-cloudsat-satellite-3d-model-animated-obj-fbx-c4d-dae.jpg'}/>
+                    <img alt={''}  className={'img'}
+                         //src={'https://img-new.cgtrader.com/items/122381/dbaa861cce/photorealistic-earth-and-cloudsat-satellite-3d-model-animated-obj-fbx-c4d-dae.jpg'}
+                    />
                     <text className={'text_button'}>ФОТО ИЗ КОСМОСА</text>
                 </button>
 
