@@ -27,3 +27,14 @@
     margin-left: 10%;
     margin-top: 20px;
 }
+
+.test_button{
+    background: var(--tg-theme-bg-color);
+}
+
+.test1_button{
+    background: var(--tg-theme-bg-color);
+}
+.test2_button{
+    background: var(--tg-theme-bg-color);
+}
