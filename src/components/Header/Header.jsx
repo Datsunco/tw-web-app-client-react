@@ -14,11 +14,13 @@ const Header = () => {
         tg.MainButton.show();
         tg.MainButton.disable();
         tg.MainButton.color = "##364b59";
+        tg.expand();
     }
 
     const onClickServices = () =>{
         navigate('/services');
         tg.BackButton.show();
+        tg.expand();
         tg.setBackgroundColor('secondary_bg_color')
     }
 
