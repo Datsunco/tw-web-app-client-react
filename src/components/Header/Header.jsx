@@ -10,11 +10,12 @@ const Header = () => {
 
     const onClickDonation = () => {
         navigate('/donation');
+        tg.expand();
         tg.BackButton.show();
         tg.MainButton.show();
         tg.MainButton.disable();
         tg.MainButton.color = "##364b59";
-        tg.expand();
+
     }
 
     const onClickServices = () =>{
