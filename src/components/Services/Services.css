@@ -34,13 +34,18 @@
 
 .test_button{
     background: var(--tg-theme-bg-color);
+    height: 150px;
     width: 60%;
+
 }
 
 .test1_button{
     background: var(--tg-theme-bg-color);
+    height: 200px;
     width: 30%;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
+    height: 100px;
+    margin-top: 10px;
 }
