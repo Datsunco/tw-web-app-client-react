@@ -27,26 +27,26 @@
 }
 
 .quick_button_block{
-    width: 80%;
-    margin-left: 10%;
+    width: 85%;
+    margin-left: 12.5%;
     margin-top: 20px;
 }
 
 .test_button{
     background: var(--tg-theme-bg-color);
-    height: 135px;
+    height: 120px;
     width: 65%;
 
 }
 
 .test1_button{
     background: var(--tg-theme-bg-color);
-    height: 135px;
+    height: 120px;
     width: 30%;
 }
 .test2_button{
     background: var(--tg-theme-bg-color);
-    height: 135px;
+    height: 120px;
     width: 35%;
     margin-top: 10px;
 }
