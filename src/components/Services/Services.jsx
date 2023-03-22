@@ -29,7 +29,7 @@ const Services = () => {
                 <button className={'test1_button'}>Скоро</button>
 
                     <button className={'test2_button'}>
-                        <text className={'text_button'}>Скоро</text>
+                        <text className={'text2_button'}>Скоро</text>
                     </button>
 
 
