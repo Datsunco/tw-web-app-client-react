@@ -1,16 +1,18 @@
 import React from 'react';
 import './Services.css'
+import {useNavigate} from "react-router-dom";
 
 
 const tg = window.Telegram.WebApp;
 
 const Services = () => {
+    const navigate = useNavigate();
 
     const onFirButClick = () => {
-        tg.showPopup({
-            'title': 'Перейти к оплате',
-            'message': 'lol',
-        });
+        navigate('/space_photo');
+        tg.expand();
+        tg.BackButton.show();
+        tg.MainButton.show();
     }
 
     return (
