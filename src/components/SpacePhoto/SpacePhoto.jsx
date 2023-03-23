@@ -4,8 +4,8 @@ import Map from "../Map/Map";
 import {useJsApiLoader} from "@react-google-maps/api";
 
 const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: 55.758791,
+    lng: 37.622071
 };
 
 const SpacePhoto = () => {
@@ -15,7 +15,7 @@ const SpacePhoto = () => {
     })
     return (
         <div className={'SpacePhoto'}>
-            {isLoaded ? <Map center={center}/> : <></>}
+            {isLoaded ? <Map className={'map'} center={center}/> : <h2>Loading</h2>}
         </div>
     );
 };

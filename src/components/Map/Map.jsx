@@ -1,14 +1,27 @@
 import React from 'react';
 import './Map.css';
 import { GoogleMap } from '@react-google-maps/api';
+import {defaultTheme} from "./Theme";
 
 
 const containerStyle = {
-    width: '30%',
-    height: '30%'
+    width: '300px',
+    height: '300px'
 };
 
-const defaultOptions ={
+const defaultOptions = {
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    clickableIcons: false,
+    keyboardShortcuts: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: false,
+    fullscreenControl: false,
+    styles: defaultTheme,
 
 }
 
