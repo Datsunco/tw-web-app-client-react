@@ -6,6 +6,8 @@ import Services from "./components/Services/Services";
 import {Route, Routes} from 'react-router-dom'
 import SpacePhoto from "./components/SpacePhoto/SpacePhoto";
 
+
+
 const tg = window.Telegram.WebApp;
 
 function App() {
