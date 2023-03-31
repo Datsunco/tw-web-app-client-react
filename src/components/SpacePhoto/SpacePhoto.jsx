@@ -18,7 +18,7 @@ const SpacePhoto = () => {
             console.log(coordinates);
         },[])
 
-    const waitPhoto = () =>{
+    /*const waitPhoto = () =>{
         const promise = fetch('https://measure.codes/cosmos/sentinel/?lat=37.262186&lon=56.636344&suid=TRANSPARENT&telegram=1',{mode: 'no-cors',});
         promise
         .then(function(response){
@@ -32,13 +32,20 @@ const SpacePhoto = () => {
           })
           .catch(function(error) {
             console.log('Request failed', error)
-          });
-    }
+          });*/
+    
+
+    async function catchHandler(){
+        const promise = await fetch('https://measure.codes/cosmos/sentinel/?lat=37.262186&lon=56.636344&suid=TRANSPARENT&telegram=1',{mode: 'no-cors',});
+        const data = await promise;
+        console.log(data)
+    }      
+
     return (
         <div className={'SpacePhoto'}>
             {isLoaded ? <Map className={'map'} center={center}/> : <h2>Loading</h2>}
             <Form onSelect={onPlaceSelect}/>
-            <button className={'butt'} onClick={waitPhoto}>lol</button>
+            <button className={'butt'} onClick={catchHandler}>lol</button>
         </div>
     );
 };
