@@ -19,7 +19,7 @@ const SpacePhoto = () => {
         },[])
 
     const waitPhoto = () =>{
-        const promise = fetch('https://measure.codes/cosmos/sentinel/?lat=37.262186&lon=56.636344&suid=TRANSPARENT&telegram=1',);
+        const promise = fetch('https://measure.codes/cosmos/sentinel/?lat=37.262186&lon=56.636344&suid=TRANSPARENT&telegram=1',{mode: 'no-cors',});
         promise
         .then(function(response){
             console.log(response);
