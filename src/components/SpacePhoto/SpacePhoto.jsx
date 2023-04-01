@@ -9,20 +9,28 @@ const tg = window.Telegram.WebApp;
 
 const SpacePhoto = () => {
     const [center,setCenter] = useState('');
+    const [lat,setLat] = useState('');
+    const [lon,setLon] = useState('');
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: "AIzaSyD8jQRBkxYYsQb6FWMPNjgSQW1lVIEj1EA"
     })
 
-    const onPlaceSelect = (coordinates) => {
+    const onPlaceSelect = useCallback( (coordinates) => {
             setCenter(coordinates);
-            console.log(coordinates);
-        }
+            setLat(coordinates.lat);
+            setLon(coordinates.lon);
+            console.log(lat)
+            console.log(lon);
+        }, [lat,lon])
     
     const onSendData = useCallback( () => {
-
-        tg.sendData(JSON.stringify(center));
-    }, [center])
+        const data = {
+            lat: lat,
+            lon: lon,
+        }
+        tg.sendData(JSON.stringify(data));
+    }, [lat,lon])
     
     useEffect(()=>{
         tg.onEvent('mainButtonClicked', onSendData)
