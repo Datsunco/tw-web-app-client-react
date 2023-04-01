@@ -21,6 +21,7 @@ const Header = () => {
     const onClickServices = () =>{
         navigate('/services');
         tg.BackButton.show();
+        tg.MainButton.show();
         tg.expand();
         tg.setBackgroundColor('secondary_bg_color')
     }
