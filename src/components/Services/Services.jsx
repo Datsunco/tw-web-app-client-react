@@ -13,6 +13,7 @@ const Services = () => {
         tg.expand();
         tg.BackButton.show();
         tg.MainButton.show();
+        tg.MainButton.enable();
     }
 
     return (
