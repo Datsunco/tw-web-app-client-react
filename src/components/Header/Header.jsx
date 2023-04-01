@@ -42,12 +42,12 @@ const Header = () => {
         }
     },[onClickBackDonation])
 
-    useEffect(() => {
+    /*useEffect(() => {
             tg.MainButton.setParams({
                 text: 'Перейти к оплате',
                 color: '#364b59',
             })
-    },[])
+    },[])*/
 
     //useEffect(() => {
     //    tg.MainButton.setParams({
