@@ -20,15 +20,14 @@ const SpacePhoto = () => {
         }
     
     const onSendData = useCallback( () => {
-        const data = {
-            center,
-        }
-        tg.sendData(JSON.stringify(data));
+
+        tg.sendData(JSON.stringify(center));
     }, [center])
     
     useEffect(()=>{
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
+            tg.offEvent('mainButtonClicked', onSendData)
         }
     },[onSendData])
 
