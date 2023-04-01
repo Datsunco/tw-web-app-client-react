@@ -8,7 +8,7 @@ const tg = window.Telegram.WebApp;
 const Header = () => {
     const navigate = useNavigate();
 
-    const onClickDonation = () => {
+    const onClickDonation =useCallback( () => {
         navigate('/donation');
         tg.expand();
         tg.BackButton.show();
@@ -16,14 +16,15 @@ const Header = () => {
         tg.MainButton.disable();
         tg.MainButton.color = "##364b59";
 
-    }
+    },[navigate])
 
-    const onClickServices = () =>{
+    const onClickServices = useCallback( () =>{
         navigate('/services');
         tg.BackButton.show();
+
         tg.expand();
         tg.setBackgroundColor('secondary_bg_color')
-    }
+    },[navigate])
 
     const onClickBackDonation = useCallback( () => {
         navigate('');
@@ -37,7 +38,7 @@ const Header = () => {
     useEffect(()=>{
         tg.onEvent('backButtonClicked', onClickBackDonation)
         return () => {
-            
+            tg.offEvent('backButtonClicked', onClickBackDonation)
         }
     },[onClickBackDonation])
 

@@ -1,11 +1,11 @@
-import React, {useCallback,useEffect} from 'react';
+import React from 'react';
 import './SpacePhoto.css'
 import Map from "../Map/Map";
 import {useJsApiLoader} from "@react-google-maps/api";
 import Form from "../Form/Form";
 import {useState} from "react";
 
-const tg = window.Telegram.WebApp;
+//const tg = window.Telegram.WebApp;
 
 const SpacePhoto = () => {
     const [center,setCenter] = useState('');
@@ -14,24 +14,19 @@ const SpacePhoto = () => {
         googleMapsApiKey: "AIzaSyD8jQRBkxYYsQb6FWMPNjgSQW1lVIEj1EA"
     })
 
-    const onPlaceSelect = useCallback((coordinates) => {
+    const onPlaceSelect = (coordinates) => {
             setCenter(coordinates);
             console.log(coordinates);
-        },[])
+        }
     
-        const onSendData = useCallback( () => {
-            const data = {
-                center,
-            }
-            tg.sendData(JSON.stringify(data));
-        }, [center])
+    /*const onSendData = useCallback( () => {
+        const data = {
+            center,
+        }
+        tg.sendData(JSON.stringify(data));
+    }, [center])*/
     
-        useEffect( () => {
-            tg.onEvent('mainButtonClicked', onSendData)
-            return () => {
-                tg.offEvent('backButtonClicked', onSendData)
-            }
-        },[onSendData])
+
 
     return (
         <div className={'SpacePhoto'}>

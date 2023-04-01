@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useCallback}  from 'react';
 import './Services.css'
 import {useNavigate} from "react-router-dom";
 
@@ -8,13 +8,12 @@ const tg = window.Telegram.WebApp;
 const Services = () => {
     const navigate = useNavigate();
 
-    const onFirButClick = () => {
-        tg.MainButton.show();
+    const onFirButClick = useCallback(() => {
         navigate('/space_photo');
         tg.expand();
         console.log(1);
         tg.MainButton.show();
-    }
+    },[navigate])
 
     return (
         <div className={'services'}>
