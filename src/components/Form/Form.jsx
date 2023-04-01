@@ -40,14 +40,6 @@ const Form = ({onSelect}) => {
 
 
 
-    useEffect(() => {
-        if (!address && !coordinates){
-            tg.MainButton.hide();
-        } else {
-            tg.MainButton.show();
-        }
-    }, [address, coordinates])
-
     const onChangeCity = (e, index) => {
         var address_text = '';
         //if Проверка на вызов функции из HTMl или из функции onClickAutoCompleteItem
