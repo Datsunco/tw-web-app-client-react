@@ -13,7 +13,7 @@ const Services = () => {
         navigate('/space_photo');
         tg.expand();
         console.log(1);
-
+        tg.MainButton.show();
     }
 
     return (
