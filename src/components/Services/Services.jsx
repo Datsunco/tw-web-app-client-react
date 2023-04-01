@@ -9,9 +9,7 @@ const Services = () => {
     const navigate = useNavigate();
 
     const onFirButClick = () => {
-        tg.BackButton.show();
         tg.MainButton.show();
-        tg.MainButton.enable();
         navigate('/space_photo');
         tg.expand();
 

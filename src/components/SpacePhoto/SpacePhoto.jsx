@@ -29,7 +29,7 @@ const SpacePhoto = () => {
         useEffect( () => {
             tg.onEvent('mainButtonClicked', onSendData)
             return () => {
-                tg.offEvent('mainButtonClicked', onSendData)
+                tg.offEvent('backButtonClicked', onSendData)
             }
         },[onSendData])
 
