@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './Form.css'
-import {useCallback} from "react";
 
 const url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
 const token = "14ff958eb194fcb4809c2f0661a7c8a2549d4cd1";
@@ -14,23 +13,6 @@ const Form = ({onSelect}) => {
     const [articles, setArticles] = useState([]);
     const [isOpen, setIsOpen] = useState(true);
 
-
-
-
-    const onSendData = useCallback( () => {
-        const data = {
-            address,
-            coordinates,
-        }
-        tg.sendData(JSON.stringify(data));
-    }, [address,coordinates])
-
-    useEffect( () => {
-        tg.onEvent('mainButtonClicked', onSendData)
-        return () => {
-            tg.offEvent('mainButtonClicked', onSendData)
-        }
-    },[onSendData])
 
     useEffect(() => {
         tg.MainButton.setParams({
