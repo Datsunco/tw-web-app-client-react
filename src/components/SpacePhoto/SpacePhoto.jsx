@@ -19,6 +19,7 @@ const SpacePhoto = () => {
     const onPlaceSelect = useCallback( (coordinates) => {
             setCenter(coordinates);
             setLat(coordinates.lat);
+
             setLon(coordinates.lon);
             console.log(center)
             console.log(lat)

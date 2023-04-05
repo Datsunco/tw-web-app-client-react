@@ -9,7 +9,7 @@ const tg = window.Telegram.WebApp;
 const Form = ({onSelect}) => {
     //document.querySelector("#address").addEventListener("change", onChangeCity);
     const [address, setAddress] = useState('');
-    const [coordinates, setCoordinates] = useState('');
+    //const [coordinates, setCoordinates] = useState('');
     const [articles, setArticles] = useState([]);
     const [isOpen, setIsOpen] = useState(true);
 
@@ -62,9 +62,9 @@ const Form = ({onSelect}) => {
         return fetch(url, params);
     }
 
-    const onChangeCoordinates = (e) => {
-        setCoordinates(e.target.value);
-    }
+    //const onChangeCoordinates = (e) => {
+    //    setCoordinates(e.target.value);
+    //}
 
 
     const onClickAutoCompleteItem = (e,article) =>{
@@ -112,14 +112,6 @@ const Form = ({onSelect}) => {
                     :null
                 }
             </ul>
-            <input
-                id={'coordinates'}
-                className={'input'}
-                type="text"
-                placeholder={'Координаты'}
-                value={coordinates}
-                onChange={onChangeCoordinates}
-            />
         </div>
     );
 };
