@@ -99,7 +99,6 @@ const Form = ({onSelect}) => {
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
             <h3>Введите ваши данные</h3>
             <input 
-                ref={inputRef} 
                 id={'address'}
                 className={'input'}
                 type="text"
@@ -108,7 +107,7 @@ const Form = ({onSelect}) => {
                 onClick={onClickInput}
                 onChange={(e) => onChangeCity(e,0)}
             />
-            <ul className={"autoComplete"}>
+            <ul className={"autoComplete"}  ref={inputRef} >
                 {  isOpen
                    ? Object.keys(articles).map(article => {
                     return(

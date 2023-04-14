@@ -5,6 +5,7 @@ import {useJsApiLoader} from "@react-google-maps/api";
 import Form from "../Form/Form";
 import {useState} from "react";
 
+
 const tg = window.Telegram.WebApp;
 
 const SpacePhoto = () => {
@@ -47,7 +48,7 @@ const SpacePhoto = () => {
     return (
         <div className={'SpacePhoto'}>
             {isLoaded ? <Map className={'map'} center={center}/> : <h2>Loading</h2>}
-            <Form onSelect={onPlaceSelect}/>
+            <Form onSelect={onPlaceSelect} />
         </div>
     );
 };
