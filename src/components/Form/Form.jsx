@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { useRef } from "react";
 import './Form.css'
 
 const url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
@@ -7,6 +8,8 @@ const tg = window.Telegram.WebApp;
 
 
 const Form = ({onSelect}) => {
+    const inputRef = useRef(null);
+
     //document.querySelector("#address").addEventListener("change", onChangeCity);
     const [address, setAddress] = useState('');
     //const [coordinates, setCoordinates] = useState('');
@@ -81,6 +84,11 @@ const Form = ({onSelect}) => {
 
     const onClickInput = () =>{
         setIsOpen(true);
+        inputRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center"
+          });
     }
 
     const onClickForm = () =>{
@@ -90,7 +98,8 @@ const Form = ({onSelect}) => {
         <div className={'form'} onClick={onClickForm} щтСДшсл>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
             <h3>Введите ваши данные</h3>
-            <input
+            <input 
+                ref={inputRef} 
                 id={'address'}
                 className={'input'}
                 type="text"
