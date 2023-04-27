@@ -37,8 +37,8 @@ const SpacePhoto = () => {
     }, [lat,lon,center])
     
     useEffect(()=>{
-        tg.MainButton.show();
-        tg.MainButton.enable();
+        //tg.MainButton.show();
+        //tg.MainButton.enable();
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
