@@ -5,7 +5,7 @@ import {defaultTheme} from "./Theme";
 
 
 const containerStyle = {
-    width: '200px',
+    width: '450px',
     height: '200px'
 };
 
