@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState,KeyboardAvoidingView} from 'react';
 import { useRef } from "react";
 import './Form.css'
 
@@ -98,6 +98,7 @@ const Form = ({onSelect}) => {
         <div className={'form'} onClick={onClickForm} щтСДшсл>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
             <h3>Введите ваши данные</h3>
+
             <input 
                 id={'address'}
                 className={'input'}
@@ -107,7 +108,7 @@ const Form = ({onSelect}) => {
                 onClick={onClickInput}
                 onChange={(e) => onChangeCity(e,0)}
             />
-            <ul className={"autoComplete"}  ref={inputRef} >
+            <ul className={"autoComplete"}>
                 {  isOpen
                    ? Object.keys(articles).map(article => {
                     return(
@@ -120,6 +121,7 @@ const Form = ({onSelect}) => {
                     :null
                 }
             </ul>
+
         </div>
     );
 };
