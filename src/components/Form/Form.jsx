@@ -21,6 +21,7 @@ const Form = ({onSelect}) => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
+        tg.MainButton.hide();
     },[])
 
 
@@ -80,6 +81,7 @@ const Form = ({onSelect}) => {
         onSelect(center);
         setIsOpen(!isOpen);
         onChangeCity(e, 1);
+        tg.MainButton.show()
     }
 
     const onClickInput = () =>{
